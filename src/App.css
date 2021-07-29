@@ -2,37 +2,83 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: baseline;
+  font-size: 25px;
+  padding-bottom: 15px;
+  font-family: 'Gayathri', sans-serif;
+  background-color: white;
+  border-bottom: 5px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.pikachu {
+  position: absolute;
+  left: 0;
+  height: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  height: 90px;
+  width: 260px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftScreen {
+  display: flex;
+  margin-left: 100px;
+}
+
+.pokemonNames {
+  flex-direction: column;
+  padding: 20px;
+  overflow-Y: scroll;
+  height: 70vh;
+  width: 60vh;
+  margin: auto;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.name {
+  border: 3px solid black;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  display: flex;
+  font-family: 'Source Sans Pro', sans-serif;
+  justify-content: space-between;
+  margin: 3px;
+  padding-left: 60px;
+  background-color: white;
+}
+
+.pokeball {
+  padding: 5px 25px 0px 0px;
+  width: 20px;
+  height: 20px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+div::first-letter {
+  text-transform: capitalize;
 }
